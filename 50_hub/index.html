@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://www.dandiarchive.org/handbook/14_publish/">
+        <link rel="canonical" href="https://www.dandiarchive.org/handbook/50_hub/">
       
       
-        <link rel="prev" href="../135_validation/">
+        <link rel="prev" href="../40_development/">
       
       
-        <link rel="next" href="../15_debugging/">
+        <link rel="next" href="../tutorials/analysis-demo/">
       
       
       <link rel="icon" href="../img/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Publishing Dandisets - DANDI Documentation</title>
+        <title>DANDI Hub - DANDI Documentation</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#publishing-dandisets" class="md-skip">
+        <a href="#using-the-dandi-hub" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Publishing Dandisets
+              DANDI Hub
             
           </span>
         </div>
@@ -302,21 +302,19 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -330,7 +328,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             User Guide
@@ -467,19 +465,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../14_publish/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -488,7 +477,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -675,10 +663,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../50_hub/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    DANDI Hub
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -687,6 +695,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-a-server-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing a server option
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-server-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom server image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-notebooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example notebooks
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -880,45 +944,29 @@
   
 
 
-<h1 id="publishing-dandisets">Publishing Dandisets<a class="headerlink" href="#publishing-dandisets" title="Permanent link">&para;</a></h1>
-<p>Once you create a Dandiset, DANDI will automatically create a <code>draft</code> version
-of the Dandiset that can be changed as many times as needed by editing the 
-metadata or uploading new files.</p>
-<p>When the draft version is ready, you can <em>publish</em> your Dandiset. This results
-in an immutable snapshot of your Dandiset with its own unique version number
-that others can cite. If you need to change the data or metadata, you can do
-so by continuing to modify the draft version and publishing a new version
-when you are ready.</p>
-<p>Follow these steps to publish your Dandiset:</p>
-<ol>
-<li>
-<p>Edit the Dandiset metadata, aiming to fix all Dandiset metadata validation
-   errors, and include any other useful information. For example, you may want
-   to edit the following fields:</p>
-<ul>
-<li>People and funding contributors</li>
-<li>Protocol information</li>
-<li>Keywords</li>
-<li>Related resources such as publications and code repositories</li>
-</ul>
-</li>
-<li>
-<p>Fix all asset metadata errors by modifying the asset files to eliminate
-   the errors and re-uploading them.</p>
-</li>
-<li>
-<p>When all the Dandiset metadata and asset metadata errors are fixed, and the Dandiset is made public if it was initially embargoed, the
-   <code>Publish</code> button (on the right panel of the Dandiset landing page) will
-   be enabled and turn green. Click the button to publish your Dandiset.</p>
-</li>
-<li>
-<p>In the lower right section of the Dandiset landing page, you should see
-   the new, published version of your Dandiset listed. Click on that link
-   to view this version.</p>
-</li>
-</ol>
-<p><strong>NOTE:</strong> Dandisets with Zarr assets currently cannot be published. We are 
-actively working on enabling this feature.</p>
+<h1 id="using-the-dandi-hub">Using the DANDI Hub<a class="headerlink" href="#using-the-dandi-hub" title="Permanent link">&para;</a></h1>
+<p><a href="http://hub.dandiarchive.org">DANDI Hub</a> is a <a href="https://jupyterhub.readthedocs.io">JupyterHub</a> instance in the cloud to interact with the data stored in DANDI, and is free to use for exploratory analysis of data on DANDI.
+For instructions on how to navigate JupyterHub see this <a href="https://www.youtube.com/watch?v=5pf0_bpNbkw&amp;t=09m20s">YouTube tutorial</a>.
+Note that DANDI Hub is not intended for significant computation, but provides a place to introspect Dandisets and to perform some analysis and visualization of data.</p>
+<h2 id="registration">Registration<a class="headerlink" href="#registration" title="Permanent link">&para;</a></h2>
+<p>To use the <a href="http://hub.dandiarchive.org">DANDI Hub</a>, you must first register for an account using the <a href="http://dandiarchive.org">DANDI website</a>.
+See the <a href="../16_account/">Create a DANDI Account</a> page.</p>
+<h2 id="choosing-a-server-option">Choosing a server option<a class="headerlink" href="#choosing-a-server-option" title="Permanent link">&para;</a></h2>
+<p>When you start up the DANDI Hub, you will be asked to select across a number of server options.
+For basic exploration, Tiny or Base would most likely be appropriate.
+The DANDI Hub also currently offers Medium and Large options, which have more available memory and compute power.
+The "T4 GPU inference" server comes with an associated T4 GPU, and is intended to be used for applications that require GPU for inference.
+We request that users of this server be considerate of their usage of the DANDI Hub as a free community resource.
+Training large deep neural networks is not appropriate.
+A "Base (MATLAB)" server is also available, which provides a MATLAB cloud installation but you would be required to provide your own license.</p>
+<h2 id="custom-server-image">Custom server image<a class="headerlink" href="#custom-server-image" title="Permanent link">&para;</a></h2>
+<p>If you need additional software installed in the image, you can add a server image that will be made available for all users in the <code>Server Options</code> menu.  Add a server image by updating the <code>profileList</code> in the <a href="https://github.com/dandi/dandi-hub/blob/do-eks/helm/jupyterhub/dandihub.yaml">JupyterHub config file</a> and submitting a pull request to the <a href="https://github.com/dandi/dandi-hub">dandi-hub repository</a>.  Once the pull request is merged, the DANDI team will redeploy JupyterHub and the image will be available.</p>
+<h2 id="example-notebooks">Example notebooks<a class="headerlink" href="#example-notebooks" title="Permanent link">&para;</a></h2>
+<p>The best way to share analyses on DANDI data is through the DANDI example notebooks.
+These notebooks are maintained in the <a href="https://github.com/dandi/example-notebooks">dandi/example-notebooks</a> repository which provides more information about their organization.
+Dandiset contributors are encouraged to use these notebooks to demonstrate how to read, analyze, and visualize the data, and how to produce figures from associated scientific publications.</p>
+<p>Notebooks can be added and updated through a pull request to the <a href="https://github.com/dandi/example-notebooks">dandi/example-notebooks</a> repository.
+Once the pull request is merged, your contributed notebook will be available to all DANDI Hub users.</p>
 
 
 

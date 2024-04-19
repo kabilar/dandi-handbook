@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://www.dandiarchive.org/handbook/14_publish/">
+        <link rel="canonical" href="https://www.dandiarchive.org/handbook/16_account/">
       
       
-        <link rel="prev" href="../135_validation/">
+        <link rel="prev" href="../10_using_dandi/">
       
       
-        <link rel="next" href="../15_debugging/">
+        <link rel="next" href="../11_view/">
       
       
       <link rel="icon" href="../img/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Publishing Dandisets - DANDI Documentation</title>
+        <title>Create DANDI Account - DANDI Documentation</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#publishing-dandisets" class="md-skip">
+        <a href="#create-a-dandi-account" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Publishing Dandisets
+              Create DANDI Account
             
           </span>
         </div>
@@ -362,10 +362,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../16_account/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Create DANDI Account
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -374,6 +394,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -467,19 +516,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../14_publish/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -488,7 +528,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -880,45 +919,18 @@
   
 
 
-<h1 id="publishing-dandisets">Publishing Dandisets<a class="headerlink" href="#publishing-dandisets" title="Permanent link">&para;</a></h1>
-<p>Once you create a Dandiset, DANDI will automatically create a <code>draft</code> version
-of the Dandiset that can be changed as many times as needed by editing the 
-metadata or uploading new files.</p>
-<p>When the draft version is ready, you can <em>publish</em> your Dandiset. This results
-in an immutable snapshot of your Dandiset with its own unique version number
-that others can cite. If you need to change the data or metadata, you can do
-so by continuing to modify the draft version and publishing a new version
-when you are ready.</p>
-<p>Follow these steps to publish your Dandiset:</p>
+<h1 id="create-a-dandi-account">Create a DANDI Account<a class="headerlink" href="#create-a-dandi-account" title="Permanent link">&para;</a></h1>
+<p>A DANDI account is only required for specific features.
+Without a DANDI account, you can search, view, and download files.
+With a DANDI account, you can additionally create Dandisets and access the DANDI Hub to analyze existing data.</p>
+<h2 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h2>
 <ol>
-<li>
-<p>Edit the Dandiset metadata, aiming to fix all Dandiset metadata validation
-   errors, and include any other useful information. For example, you may want
-   to edit the following fields:</p>
-<ul>
-<li>People and funding contributors</li>
-<li>Protocol information</li>
-<li>Keywords</li>
-<li>Related resources such as publications and code repositories</li>
-</ul>
-</li>
-<li>
-<p>Fix all asset metadata errors by modifying the asset files to eliminate
-   the errors and re-uploading them.</p>
-</li>
-<li>
-<p>When all the Dandiset metadata and asset metadata errors are fixed, and the Dandiset is made public if it was initially embargoed, the
-   <code>Publish</code> button (on the right panel of the Dandiset landing page) will
-   be enabled and turn green. Click the button to publish your Dandiset.</p>
-</li>
-<li>
-<p>In the lower right section of the Dandiset landing page, you should see
-   the new, published version of your Dandiset listed. Click on that link
-   to view this version.</p>
-</li>
+<li>To create a DANDI account, first <a href="https://github.com/">create a GitHub account</a> if you don't have one.</li>
+<li>Using your GitHub account, register for a DANDI account by selecting the <code>LOG IN WITH GITHUB</code> button on the <a href="https://dandiarchive.org">DANDI homepage</a>.</li>
+<li>You will receive an email acknowledging that your request for an account will be reviewed within 24 hours.</li>
+<li><strong>note</strong>: Requests from new GitHub accounts and from emails that are not an <code>.edu</code> domain might take longer to review and are more likely to be rejected, especially if there are no plans described to upload data to the archive.</li>
+<li>If your request for an account is approved, you will be able to log in to DANDI using GitHub by clicking the <code>LOG IN WITH GITHUB</code> button.</li>
 </ol>
-<p><strong>NOTE:</strong> Dandisets with Zarr assets currently cannot be published. We are 
-actively working on enabling this feature.</p>
 
 
 
