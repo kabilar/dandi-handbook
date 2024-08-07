@@ -513,6 +513,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#download-a-specific-file-and-preserve-the-directory-tree-of-the-dandiset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download a specific file and preserve the directory tree of the Dandiset
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -578,6 +587,27 @@
   
   <span class="md-ellipsis">
     Validation Levels for NWB Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../136_metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dandiset Metadata
   </span>
   
 
@@ -828,7 +858,7 @@
             
   
   <span class="md-ellipsis">
-    Health Status
+    Tutorials
   </span>
   
 
@@ -837,6 +867,71 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.dandiarchive.org/example-notebooks" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dandiset Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Health Status
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Health Status
           </label>
@@ -907,10 +1002,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -921,8 +1016,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             Terms and Policies
           </label>
@@ -1040,26 +1135,30 @@ Dandisets.</p>
 If you have an issue using the Python CLI, see the <a href="../15_debugging/">Dandi Debugging section</a>.</p>
 <h3 id="download-a-dandiset">Download a Dandiset<a class="headerlink" href="#download-a-dandiset" title="Permanent link">&para;</a></h3>
 <p>To download an entire Dandiset, you can use the same command as suggested by DANDI web application, e.g.:</p>
-<pre><code>dandi download DANDI:000023
-</code></pre>
+<p><code>dandi download DANDI:000023</code></p>
 <h3 id="download-data-for-a-specific-subject-from-a-dandiset">Download data for a specific subject from a Dandiset<a class="headerlink" href="#download-data-for-a-specific-subject-from-a-dandiset" title="Permanent link">&para;</a></h3>
 <p>You can download data for specific subjects.
 Names of the subjects can be found on DANDI web application or by running a command with the DANDI CLI: <code>dandi ls -r
 DANDI:000023</code>.
 Once you have the subject ID, you can download the data, e.g.:</p>
-<pre><code>dandi download https://api.dandiarchive.org/api/dandisets/000023/versions/_draft_/assets/?path=sub-811677083
-</code></pre>
+<p><code>dandi download https://api.dandiarchive.org/api/dandisets/000023/versions/_draft_/assets/?path=sub-811677083</code></p>
 <p>You should replace <code>_draft_</code> with a specific version you are interested in (e.g. <code>0.210914.1900</code> in the case of this Dandiset).</p>
 <p>You can also use the link from DANDI web application, e.g.:</p>
-<pre><code>dandi download https://dandiarchive.org/dandiset/000023/0.210914.1900/files?location=sub-541516760%2F
-</code></pre>
+<p><code>dandi download https://dandiarchive.org/dandiset/000023/0.210914.1900/files?location=sub-541516760%2F</code></p>
 <h3 id="download-a-specific-file-from-a-dandiset">Download a specific file from a Dandiset<a class="headerlink" href="#download-a-specific-file-from-a-dandiset" title="Permanent link">&para;</a></h3>
 <p>You can download a specific file from a Dandiset when the link for the specific file can be found on the DANDI web
 application, e.g.:</p>
-<pre><code>dandi download https://api.dandiarchive.org/api/dandisets/000023/versions/0.210914.1900/assets/1a93dc97-327d-4f9c-992d-c2149e7810ae/download/
-</code></pre>
-<p><strong>Hint:</strong> <code>dandi download</code> supports a number of resource identifiers to point to a Dandiset, folder, or file.  Providing
+<p><code>dandi download https://api.dandiarchive.org/api/dandisets/000023/versions/0.210914.1900/assets/1a93dc97-327d-4f9c-992d-c2149e7810ae/download/</code></p>
+<p><strong>Hint:</strong> <code>dandi download</code> supports a number of <a href="https://dandi.readthedocs.io/en/latest/ref/urls.html#resource-ids">Resource Identifiers</a> to point to a Dandiset, folder, or file.  Providing
 an incorrect URL (e.g. <code>dandi download wrongurl</code>) will provide a list of supported identifiers.</p>
+<h3 id="download-a-specific-file-and-preserve-the-directory-tree-of-the-dandiset">Download a specific file and preserve the directory tree of the Dandiset<a class="headerlink" href="#download-a-specific-file-and-preserve-the-directory-tree-of-the-dandiset" title="Permanent link">&para;</a></h3>
+<p>In the command below, replace the <code>&lt;dandiset-id&gt;</code>, <code>&lt;version&gt;</code>, and asset <code>&lt;path&gt;</code>.
+The <code>&lt;path&gt;</code> can be found by selecting the <code>View asset metadata</code> icon next to an asset on <a href="https://dandiarchive.org">https://dandiarchive.org</a> and locating the <code>path</code> key.</p>
+<pre><code>dandi download --preserve-tree dandi://dandi/&lt;dandiset-id&gt;@&lt;version&gt;/&lt;path&gt;
+</code></pre>
+<p>For example:</p>
+<pre><code>dandi download --preserve-tree dandi://dandi/000026@draft/sub-I58/ses-Hip-CT/micr/sub-I58_sample-01_chunk-01_hipCT.json
+</code></pre>
 <h2 id="using-datalad">Using DataLad<a class="headerlink" href="#using-datalad" title="Permanent link">&para;</a></h2>
 <p>All dandisets are regularly mirrored to DataLad datasets which are made available at the GitHub organization <a href="https://github.com/dandisets">https://github.com/dandisets</a>.
 Where present, individual <a href="https://zarr.dev/">Zarr</a> files are included as subdatasets (<a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">git submodules</a>) hosted in the GitHub organization <a href="https://github.com/dandizarrs/">https://github.com/dandizarrs/</a>.</p>
