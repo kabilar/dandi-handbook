@@ -513,6 +513,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#download-a-specific-file-and-preserve-the-directory-tree-of-the-dandiset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download a specific file and preserve the directory tree of the Dandiset
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1140,8 +1149,16 @@ Once you have the subject ID, you can download the data, e.g.:</p>
 <p>You can download a specific file from a Dandiset when the link for the specific file can be found on the DANDI web
 application, e.g.:</p>
 <p><code>dandi download https://api.dandiarchive.org/api/dandisets/000023/versions/0.210914.1900/assets/1a93dc97-327d-4f9c-992d-c2149e7810ae/download/</code></p>
-<p><strong>Hint:</strong> <code>dandi download</code> supports a number of resource identifiers to point to a Dandiset, folder, or file.  Providing
+<p><strong>Hint:</strong> <code>dandi download</code> supports a number of <a href="https://dandi.readthedocs.io/en/latest/ref/urls.html#resource-ids">Resource Identifiers</a> to point to a Dandiset, folder, or file.  Providing
 an incorrect URL (e.g. <code>dandi download wrongurl</code>) will provide a list of supported identifiers.</p>
+<h3 id="download-a-specific-file-and-preserve-the-directory-tree-of-the-dandiset">Download a specific file and preserve the directory tree of the Dandiset<a class="headerlink" href="#download-a-specific-file-and-preserve-the-directory-tree-of-the-dandiset" title="Permanent link">&para;</a></h3>
+<p>In the command below, replace the <code>&lt;dandiset-id&gt;</code>, <code>&lt;version&gt;</code>, and asset <code>&lt;path&gt;</code>.
+The <code>&lt;path&gt;</code> can be found by selecting the <code>View asset metadata</code> icon next to an asset on the web app and locating the <code>path</code> key.</p>
+<pre><code>dandi download --preserve-tree dandi://dandi/&lt;dandiset-id&gt;@&lt;version&gt;/&lt;path&gt;
+</code></pre>
+<p>For example:</p>
+<pre><code>dandi download --preserve-tree dandi://dandi/000026@draft/sub-I58/ses-Hip-CT/micr/sub-I58_sample-01_chunk-01_hipCT.json
+</code></pre>
 <h2 id="using-datalad">Using DataLad<a class="headerlink" href="#using-datalad" title="Permanent link">&para;</a></h2>
 <p>All dandisets are regularly mirrored to DataLad datasets which are made available at the GitHub organization <a href="https://github.com/dandisets">https://github.com/dandisets</a>.
 Where present, individual <a href="https://zarr.dev/">Zarr</a> files are included as subdatasets (<a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">git submodules</a>) hosted in the GitHub organization <a href="https://github.com/dandizarrs/">https://github.com/dandizarrs/</a>.</p>
