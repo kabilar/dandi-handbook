@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.dandiarchive.org/40_development/">
+        <link rel="canonical" href="https://docs.dandiarchive.org/100_contribute_docs/">
       
       
-        <link rel="prev" href="../20_project_structure/">
+        <link rel="prev" href="../40_development/">
       
       
-        <link rel="next" href="../100_contribute_docs/">
+        <link rel="next" href="../50_hub/">
       
       
       <link rel="icon" href="../img/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Notes - DANDI Documentation</title>
+        <title>Contributing Documentation - DANDI Documentation</title>
       
     
     
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#developer-notes" class="md-skip">
+        <a href="#contributing-to-this-handbook" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Notes
+              Contributing Documentation
             
           </span>
         </div>
@@ -671,30 +671,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Notes
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../40_development/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -703,251 +683,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dandi-archive" class="md-nav__link">
-    <span class="md-ellipsis">
-      dandi-archive
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dandi-cli" class="md-nav__link">
-    <span class="md-ellipsis">
-      dandi-cli
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dandi-schema" class="md-nav__link">
-    <span class="md-ellipsis">
-      dandi-schema
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technologies-used" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technologies Used
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deployment
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      Monitoring
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Monitoring">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#services-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      Service(s) status
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#logging" class="md-nav__link">
-    <span class="md-ellipsis">
-      Logging
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Logging">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sentry" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sentry
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#heroku-papertrail" class="md-nav__link">
-    <span class="md-ellipsis">
-      Heroku &amp; Papertrail
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#continuous-integration-ci-jobs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Continuous Integration (CI) Jobs
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-hosting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Code Hosting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#email-services" class="md-nav__link">
-    <span class="md-ellipsis">
-      Email Services
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Email Services">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dns-entries-for-public-email-addresses" class="md-nav__link">
-    <span class="md-ellipsis">
-      DNS Entries for public email addresses
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mass-emails-with-mailchimp" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mass emails with Mailchimp
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Mass emails with Mailchimp">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#updating-the-dandi-userbase-audience-in-mailchimp" class="md-nav__link">
-    <span class="md-ellipsis">
-      Updating the DANDI userbase audience in Mailchimp
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#miscellaneous-tips-and-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Miscellaneous Tips and Information
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Miscellaneous Tips and Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#use-email-address-to-log-into-dev-django-admin-panel" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use email address to log into dev Django admin panel
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#refresh-github-login-to-log-into-prod-django-admin-panel" class="md-nav__link">
-    <span class="md-ellipsis">
-      Refresh GitHub login to log into prod Django admin panel
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#why-do-incoming-emails-to-dandiarchiveorg-look-crazy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why do incoming emails to dandiarchive.org look crazy?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -999,10 +734,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../100_contribute_docs/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Contributing Documentation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1011,6 +766,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#serving-the-docs-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serving the Docs Locally
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1292,193 +1076,25 @@
   
 
 
-<h1 id="developer-notes">Developer Notes<a class="headerlink" href="#developer-notes" title="Permanent link">&para;</a></h1>
-<p>This page contains important information for anyone starting development work on the DANDI
-project.</p>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>The DANDI archive dev environment comprises three major pieces of software:
-<code>dandi-archive</code>, <code>dandi-cli</code>, and <code>dandi-schema</code>.</p>
-<h3 id="dandi-archive"><code>dandi-archive</code><a class="headerlink" href="#dandi-archive" title="Permanent link">&para;</a></h3>
-<p><a href="https://github.com/dandi/dandi-archive"><code>dandi-archive</code></a> is the web frontend
-application; it connects to <code>dandi-api</code> and provides a user interface to all the DANDI functionality. 
-<code>dandi-archive</code> is a standard web application built with
-<code>yarn</code>. See the <a href="https://github.com/dandi/dandi-archive#readme"><code>dandi-archive</code> README</a>
-for instructions on how to build it locally.</p>
-<p>The Django application makes use of several services
-to provide essential function for the DANDI REST API, including Postgres (to hold
-administrative data about the web application itself), Celery (to run
-asynchronous compute tasks as needed to implement API semantics), and RabbitMQ
-(to act as a message broker between Celery and the rest of the application).</p>
-<p>The easiest way to run the API along with its services is through a Docker
-Compose setup, as detailed in the <a href="https://github.com/dandi/dandi-archive/blob/master/DEVELOPMENT.md">Develop with Docker quickstart</a>.</p>
-<h3 id="dandi-cli"><code>dandi-cli</code><a class="headerlink" href="#dandi-cli" title="Permanent link">&para;</a></h3>
-<p><a href="https://github.com/dandi/dandi-cli"><code>dandi-cli</code></a> is a Python command line tool
-used to manage downloading and uploading of data with the archive. You may need
-to use this tool when developing new features for the frontend and
-backend, but there are other methods of faking data in the system to work with
-as well. You can install <code>dandi-cli</code> with a command like <code>pip install dandi</code>
-(then invoke <code>dandi</code> on the command line to run the tool), or build it locally
-following the instructions in the <a href="https://github.com/dandi/dandi-cli#readme"><code>dandi-cli</code> README</a>.</p>
-<h3 id="dandi-schema"><code>dandi-schema</code><a class="headerlink" href="#dandi-schema" title="Permanent link">&para;</a></h3>
-<p><a href="https://github.com/dandi/dandi-schema"><code>dandi-schema</code></a> is a Python library for 
-creating, maintaining, and validating the DANDI metadata models for dandisets 
-and assets. You may need to make use of this tool when improving models, or 
-migrating metadata. You can install <code>dandi-schema</code> with a command like 
-<code>pip install dandi-schema</code>. When releases are published through dandi-schema, 
-corresponding json-schemas are generated in the release folder of the <a href="https://github.com/dandi/schema">dandi schema repo</a>. See the <code>dandi-schema</code> <a href="https://github.com/dandi/schema#readme">README</a> for instructions on 
-viewing the schemas.</p>
-<h2 id="technologies-used">Technologies Used<a class="headerlink" href="#technologies-used" title="Permanent link">&para;</a></h2>
-<p>This section details some foundational technologies used in <code>dandi-archive</code>. Some basic understanding of these technologies is the bare minimum
-requirement for contributing meaningfully, but keep in mind that the DANDI team
-can help you get spun up as well.</p>
-<p><strong>JavaScript/TypeScript.</strong> The DANDI archive code is a standard JavaScript web
-application, but we try to implement new functionality using TypeScript.</p>
-<p><strong>Vue/VueX.</strong> The application's components are written in Vue, and global
-application state is managed through VueX.</p>
-<p><strong>Vuetify.</strong> The components make heavy use of the Vuetify component library.</p>
-<p><strong>Python3.</strong> The backend code is written in Python 3.</p>
-<p><strong>Django/drf/drf-yasg.</strong> The API infrastructure is implemented through a Django application.
-This means that application resources must be mapped to Django models, while
-Django views mediate API responses. The REST endpoints are implemented via
-Django Rest Framework (DRF), while DRF-YASG is used to generate Swagger
-documentation.</p>
-<p>For general help with <code>dandi-archive</code>, contact @waxlamp.</p>
-<h2 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h2>
-<p>The DANDI project uses automated services to continuously deploy both the
-<code>dandi-api</code> backend and the <code>dandi-archive</code> frontend.</p>
-<p>Heroku manages backend deployment automatically from the <code>master</code> branch of the
-<code>dandi-api</code> repository. For this reason it is important that pull requests pass
-all CI tests before they are merged. Heroku configuration is in turn managed by
-Terraform code stored in the <code>dandi-infrastructure</code> repository. If you need
-access to the Heroku DANDI organization, talk to @satra.</p>
-<p>Netlify manages the frontend deployment process. Similarly to <code>dandi-api</code>, these
-deployments are based on the <code>master</code> branch of <code>dandi-archive</code>. The
-<a href="https://github.com/dandi/dandi-archive/blob/master/web/netlify.toml"><code>netlify.toml</code> file</a>
-controls Netlify settings. The @dandibot GitHub account is the "owner" of the
-Netlify account used for this purpose; in order to get access to that account,
-speak to @satra.</p>
-<h2 id="monitoring">Monitoring<a class="headerlink" href="#monitoring" title="Permanent link">&para;</a></h2>
-<h3 id="services-status">Service(s) status<a class="headerlink" href="#services-status" title="Permanent link">&para;</a></h3>
-<p>The DANDI project uses <a href="https://upptime.js.org/">upptime</a> to monitor the status of DANDI provided and third-party services.
-The configuration is available in <a href="https://github.com/dandi/upptime/blob/master/.upptimerc.yml">.upptimerc.yml</a> of the <a href="https://github.com/dandi/upptime">https://github.com/dandi/upptime</a> repository, which is automatically updated by the upptime project pipelines.
-Upptime automatically opens new issues if any service becomes unresponsive, and closes issues whenever service comes back online.
-<a href="https://www.dandiarchive.org/upptime/">https://www.dandiarchive.org/upptime/</a> is the public dashboard for the status of DANDI services.</p>
-<h2 id="logging">Logging<a class="headerlink" href="#logging" title="Permanent link">&para;</a></h2>
-<h3 id="sentry">Sentry<a class="headerlink" href="#sentry" title="Permanent link">&para;</a></h3>
-<p>Sentry is used for error tracking main deployment.
-To access Sentry, login to <a href="https://dandiarchive.sentry.io">https://dandiarchive.sentry.io</a> .</p>
-<h3 id="heroku-papertrail">Heroku &amp; Papertrail<a class="headerlink" href="#heroku-papertrail" title="Permanent link">&para;</a></h3>
-<p>The <code>dandi-api</code> and <code>dandi-api-staging</code> apps have the Papertrail add-on configured to capture logs.
-To access Papertrail, log in to the <a href="https://dashboard.heroku.com">Heroku dashboard</a>, proceed to the corresponding app and click on the "Papertrail" add-on.</p>
-<p>A cronjob on the <code>drogon</code> server backs up Papertrail logs as .csv files hourly at <code>/mnt/backup/dandi/papertrail-logs/{app}</code>.
-Moreover, <code>heroku logs</code> processes per app dump logs to <code>/mnt/backup/dandi/heroku-logs/{app}</code> directory.</p>
-<h3 id="continuous-integration-ci-jobs">Continuous Integration (CI) Jobs<a class="headerlink" href="#continuous-integration-ci-jobs" title="Permanent link">&para;</a></h3>
-<p>The DANDI project uses GitHub Actions for continuous integration.
-Logs for many of the repositories are archived on <code>drogon</code> server at <code>/mnt/backup/dandi/tinuous-logs/</code>.</p>
-<h2 id="code-hosting">Code Hosting<a class="headerlink" href="#code-hosting" title="Permanent link">&para;</a></h2>
-<p>All code repositories are hosted on GitHub. The easiest way to contribute is to
-gain push access to the repositories by talking to @waxlamp; this way, you can
-create pull requests based on branches within the origin repositories, which in
-turn allows for Netlify deploy previews and Heroku staging previews to be built.</p>
-<p>However, this is not strictly required. You can contribute using the standard
-fork-and-pull-request model, but under this workflow we will lose the benefit of
-those previews.</p>
-<h2 id="email-services">Email Services<a class="headerlink" href="#email-services" title="Permanent link">&para;</a></h2>
-<p>DANDI Archive maintains several email services to implement the following
-facilities:</p>
-<ul>
-<li><strong>Public email.</strong> Users of the Archive can reach the developers for help or to
-  report problems by sending email to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#100;&#97;&#110;&#100;&#105;&#97;&#114;&#99;&#104;&#105;&#118;&#101;&#46;&#111;&#114;&#103;">&#105;&#110;&#102;&#111;&#64;&#100;&#97;&#110;&#100;&#105;&#97;&#114;&#99;&#104;&#105;&#118;&#101;&#46;&#111;&#114;&#103;</a> and
-  <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#112;&#64;&#100;&#97;&#110;&#100;&#105;&#97;&#114;&#99;&#104;&#105;&#118;&#101;&#46;&#111;&#114;&#103;">&#104;&#101;&#108;&#112;&#64;&#100;&#97;&#110;&#100;&#105;&#97;&#114;&#99;&#104;&#105;&#118;&#101;&#46;&#111;&#114;&#103;</a>. These are "virtual" email addresses managed by DNS
-  entries.</li>
-<li><strong>Transactional email.</strong> The Archive sends email to users to manage the signup
-  process and to inform about special situations such as long running operations, 
-  registration reject/approval, Dandiset embargo and unembargo, changes to
-  ownership, etc. These are sent via Amazon Simple Email Service (SES),
-  programmatically from the Archive code.</li>
-<li><strong>Mass email.</strong> The maintainers of the Archive infrequently send
-  mass email to all users of the Archive to inform about downtime
-  or other notifications of mass appeal. This function is managed through a
-  Mailchimp account that requires special procedures to keep it up to date.</li>
-</ul>
-<h3 id="dns-entries-for-public-email-addresses">DNS Entries for public email addresses<a class="headerlink" href="#dns-entries-for-public-email-addresses" title="Permanent link">&para;</a></h3>
-<p>The email addresses <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#100;&#97;&#110;&#100;&#105;&#97;&#114;&#99;&#104;&#105;&#118;&#101;&#46;&#111;&#114;&#103;">&#105;&#110;&#102;&#111;&#64;&#100;&#97;&#110;&#100;&#105;&#97;&#114;&#99;&#104;&#105;&#118;&#101;&#46;&#111;&#114;&#103;</a> and <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#112;&#64;&#100;&#97;&#110;&#100;&#105;&#97;&#114;&#99;&#104;&#105;&#118;&#101;&#46;&#111;&#114;&#103;">&#104;&#101;&#108;&#112;&#64;&#100;&#97;&#110;&#100;&#105;&#97;&#114;&#99;&#104;&#105;&#118;&#101;&#46;&#111;&#114;&#103;</a> are
-advertised to users as general email addresses to use to ask for information or
-help. These are managed via Terraform as AWS Route 53 MX entries. We use
-<a href="https://improvmx.com/">ImprovMX</a> to forward emails sent to these addresses to
-<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#97;&#110;&#100;&#105;&#64;&#109;&#105;&#116;&#46;&#101;&#100;&#117;">&#100;&#97;&#110;&#100;&#105;&#64;&#109;&#105;&#116;&#46;&#101;&#100;&#117;</a>, a mailing list containing the leaders and developers of the
-project. (Other virtual addresses within the dandiarchive.org domain can be
-created as needed.)</p>
-<p>If you need the credentials for logging into ImprovMX, speak to Roni
-Choudhury (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#111;&#110;&#105;&#46;&#99;&#104;&#111;&#117;&#100;&#104;&#117;&#114;&#121;&#64;&#107;&#105;&#116;&#119;&#97;&#114;&#101;&#46;&#99;&#111;&#109;">&#114;&#111;&#110;&#105;&#46;&#99;&#104;&#111;&#117;&#100;&#104;&#117;&#114;&#121;&#64;&#107;&#105;&#116;&#119;&#97;&#114;&#101;&#46;&#99;&#111;&#109;</a>).</p>
-<h3 id="mass-emails-with-mailchimp">Mass emails with Mailchimp<a class="headerlink" href="#mass-emails-with-mailchimp" title="Permanent link">&para;</a></h3>
-<p>The Archive maintainers are able to send email to all users through the mass
-emailing functions of a dedicated Mailchimp account. In technical parlance,
-these communications are also known as "marketing email", though as a rule the
-maintainers do not conduct any actual marketing through this channel.
-Nonetheless, such communications are governed by laws and regulations such as
-the American CAN-SPAM Act, the California-specific CCPA, and the European
-Union's GDPR; Mailchimp helps the maintainers comply with these rules and
-regulations.</p>
-<p>Our major use case for mass email is to notify the userbase of upcoming downtime
-(as is needed for, e.g., a major data migration or maintenance windows).</p>
-<p>If you need to mass email the DANDI Archive userbase, speak to Roni Choudhury
-(<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#111;&#110;&#105;&#46;&#99;&#104;&#111;&#117;&#100;&#104;&#117;&#114;&#121;&#64;&#107;&#105;&#116;&#119;&#97;&#114;&#101;&#46;&#99;&#111;&#109;">&#114;&#111;&#110;&#105;&#46;&#99;&#104;&#111;&#117;&#100;&#104;&#117;&#114;&#121;&#64;&#107;&#105;&#116;&#119;&#97;&#114;&#101;&#46;&#99;&#111;&#109;</a>).</p>
-<h4 id="updating-the-dandi-userbase-audience-in-mailchimp">Updating the DANDI userbase audience in Mailchimp<a class="headerlink" href="#updating-the-dandi-userbase-audience-in-mailchimp" title="Permanent link">&para;</a></h4>
-<p>Follow these steps before sending a mass email through Mailchimp to ensure that
-the Mailchimp-maintained DANDI userbase audience is up to date.</p>
-<ol>
-<li>Log into the DANDI admin panel and navigate to the dashboard page (at, e.g.,
-   <code>api.dandiarchive.org/dashboard</code>).</li>
-<li>Click on the <code>Mailchimp CSV</code> link in the navbar to download the CSV file to
-   disk.</li>
-<li>Log into Mailchimp, click on the <code>Audience</code> section in the sidebar, then
-   click on the <code>Manage Audience</code> dropdown and select <code>Manage contacts</code>.</li>
-<li>Click on the <code>Manage audience</code> dropdown and select <code>Archive all contacts</code>.
-   Then follow the confirmation prompt to carry out the archiving operation.</li>
-<li>Click on the <code>Add contacts</code> dropdown and select <code>Import contacts</code>.</li>
-<li>Select the <code>Upload a file</code> option, and follow the wizard steps, uploading the
-   CSV file from step 2 when prompted. Activate the <code>Update any existing
-   contacts</code> checkbox under the <code>Organize your contacts</code> step. Do not set any
-   tags during the <code>Tag your contacts</code> step. In the <code>Match column labels to
-   contact information</code> step, visually verify that the email address, first
-   name, and last name columns look correctly matched. In the <code>Subscribe contacts
-   to marketing</code> step, ensure that <code>Subscribed</code> is selected in the dropdown. In
-   the <code>Review and complete your import</code>, read over the summary and ensure it is
-   correct before clicking the <code>Complete Import</code> button to finish the process.</li>
-</ol>
-<p>It is necessary to "deactivate" the entire userbase before reimporting the
-current slate of users from the freshly computed CSV file because Mailchimp does
-not have a way to perform a PUT-like operation during import (to borrow a term
-from RESTful API design), only to add new users and update existing ones.</p>
-<p>The reason to archive the contacts instead of deleting them has to do with
-Mailchimp's semantics for those actions. Deleting a user means they cannot be
-re-added to the audience, while archiving is a reversible action that retains
-all data and history and merely removes that user from the audience for purposes
-of receiving emails. Thus, we use an archive-and-reimport procedure to emulate
-the PUT-like operation we actually need.</p>
-<h2 id="miscellaneous-tips-and-information">Miscellaneous Tips and Information<a class="headerlink" href="#miscellaneous-tips-and-information" title="Permanent link">&para;</a></h2>
-<h3 id="use-email-address-to-log-into-dev-django-admin-panel">Use email address to log into dev Django admin panel<a class="headerlink" href="#use-email-address-to-log-into-dev-django-admin-panel" title="Permanent link">&para;</a></h3>
-<p>Once <code>dandi-api</code> is up and running, you can access the Django admin panel at
-<a href="http://localhost:8000/admin">http://localhost:8000/admin</a>. The login page asks for a "username" but really it
-is expecting the email address associated with the username.</p>
-<p>One easy trick here is to supply the username again as the email address when
-you are setting up the superuser during initial setup.</p>
-<h3 id="refresh-github-login-to-log-into-prod-django-admin-panel">Refresh GitHub login to log into prod Django admin panel<a class="headerlink" href="#refresh-github-login-to-log-into-prod-django-admin-panel" title="Permanent link">&para;</a></h3>
-<p>To log into the production Django admin panel, you must simply be logged into
-the DANDI Archive production instance using an admin account.</p>
-<p>However, at times the Django admin panel login seems to expire while the login
-to DANDI Archive proper is still live. In this case, simply log out of DANDI,
-log back in, and then go to the Django admin panel URL
-(e.g. <a href="https://api.dandiarchive.org/admin">https://api.dandiarchive.org/admin</a>) and you should be logged back in
-there.</p>
-<h3 id="why-do-incoming-emails-to-dandiarchiveorg-look-crazy">Why do incoming emails to dandiarchive.org look crazy?<a class="headerlink" href="#why-do-incoming-emails-to-dandiarchiveorg-look-crazy" title="Permanent link">&para;</a></h3>
-<p>When a user emails <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#112;&#64;&#100;&#97;&#110;&#100;&#105;&#97;&#114;&#99;&#104;&#105;&#118;&#101;&#46;&#111;&#114;&#103;">&#104;&#101;&#108;&#112;&#64;&#100;&#97;&#110;&#100;&#105;&#97;&#114;&#99;&#104;&#105;&#118;&#101;&#46;&#111;&#114;&#103;</a> or <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#100;&#97;&#110;&#100;&#105;&#97;&#114;&#99;&#104;&#105;&#118;&#101;&#46;&#111;&#114;&#103;">&#105;&#110;&#102;&#111;&#64;&#100;&#97;&#110;&#100;&#105;&#97;&#114;&#99;&#104;&#105;&#118;&#101;&#46;&#111;&#114;&#103;</a>, those
-messages are forwarded to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#97;&#110;&#100;&#105;&#64;&#109;&#105;&#116;&#46;&#101;&#100;&#117;">&#100;&#97;&#110;&#100;&#105;&#64;&#109;&#105;&#116;&#46;&#101;&#100;&#117;</a> (see <a href="#email-services">above</a>) so that the
-dev team sees them. However, these emails arrive with a long, spammy-looking
-From address with a Heroku DNS domain; this seems to be an artifact of how
-mit.edu processes emails, and does not occur in general (e.g. messages sent
-from the API server to users).</p>
+<h1 id="contributing-to-this-handbook">Contributing to this Handbook<a class="headerlink" href="#contributing-to-this-handbook" title="Permanent link">&para;</a></h1>
+<p>This documentation is a work in progress and we welcome all input: if something
+is missing or unclear, let us know by <a href="https://github.com/dandi/helpdesk/issues/new/choose">opening an issue on our helpdesk</a>.</p>
+<h2 id="serving-the-docs-locally">Serving the Docs Locally<a class="headerlink" href="#serving-the-docs-locally" title="Permanent link">&para;</a></h2>
+<p>This project uses the <a href="https://www.mkdocs.org/">MkDocs</a> tool with the <a href="https://squidfunk.github.io/mkdocs-material/">Material theme</a>
+and extra plugins to generate the website.</p>
+<p>To test locally, you will need to install the Python dependencies. To do that, type the following commands:</p>
+<pre><code>git clone https://github.com/dandi/handbook.git
+cd handbook
+pip install -r requirements.txt
+</code></pre>
+<p>If you are working on your <em>fork</em>, simply replace <code>https://github.com/dandi/handbook.git</code>
+with <code>git clone git@github.com/&lt;username&gt;/handbook.git</code> , where <code>&lt;username&gt;</code> is your
+GitHub username.</p>
+<p>Once done, you need to run MkDocs. Simply type:</p>
+<pre><code>mkdocs serve
+</code></pre>
+<p>Finally, open <a href="http://127.0.0.1:8000/"><code>http://127.0.0.1:8000/</code></a> in your
+browser, and you should see the default home page of the documentation being displayed.</p>
 
 
 
