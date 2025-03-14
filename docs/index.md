@@ -1,22 +1,22 @@
 # Welcome to the DANDI Archive Documentation
 
 <img
-src="./img/dandi-banner.png"
+src="./img/dandi-banner.jpg"
 alt="dandi_banner"
 style="width: 75%; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
 
-The Web interface to the DANDI archive is located at [https://dandiarchive.org](https://dandiarchive.org).
+The Web interface to the DANDI archive is located at https://dandiarchive.org.
 This documentation explains how to interact with the archive.
 
 ## How to Use This Documentation
 
 If you want to know more about the DANDI project, its goals, and the problems
-it tries to solve, check out the [Introduction](./01_introduction.md).
+it tries to solve, check out the [Introduction](./introduction.md).
 
-To start using the archive, head over to the [User Guide](./10_user_guide.md).
+To start using the archive, head over to the User Guide sections for [Sharing Data](./user-guide-sharing/creating-dandiset.md) or [Using Data](./user-guide-using/exploring-dandisets.md).
 
-If you are a developer and want to know how the project is organized, check out the 
-[Developer Guide](./20_developer_guide).
+If are a developer and want to know how the project is organized, check out the [DANDI Ecosystem](./getting-started/dandi-ecosystem.md)
+page in the Getting Started section.
 
 
 ## Where to Get Help
@@ -25,24 +25,23 @@ You can communicate with the DANDI team in a variety of ways, depending on your 
 
 - You can ask questions, report bugs, or 
 request features [at our helpdesk](https://github.com/dandi/helpdesk/issues/new/choose).
-- For interacting with the global neuroscience community, post on [https://neurostars.org](https://neurostars.org)
+- For interacting with the global neuroscience community, post on https://neurostars.org
 and use the tag [dandi](https://neurostars.org/tag/dandi).
 - You can use the DANDI Slack workspace, which we will invite you to after approving your [registration on 
   DANDI using GitHub](https://dandiarchive.org/) (this registration is required to upload data or to use the DANDI 
-  JupyterHub). See [here for details on how to 
-  register](./13_upload.md).
+  JupyterHub). See [here for details on how to
+  register](./getting-started/creating-account.md).
 - Email us: [info@dandiarchive.org](mailto: info@dandiarchive.org)
 
 ## Contributing and Feedback
 
 We are looking for people to give us feedback on this documentation. If anything
-is unclear, [open an issue on our repository](https://github.com/dandi/handbook/issues). You can also get in touch on 
+is unclear, [open an issue on our repository](https://github.com/dandi/dandi-docs/issues). You can also get in touch on 
 our Slack channel, which is available to those who have
 registered an account on the archive.
 
 If you want to get started right away and contribute directly to this
-documentation, see the [About This Documentation](.
-/100_about_this_doc.md) section.
+documentation, see the [Contributing Documentation](./developer-guide/contributing-documentation.md) section.
 
 ## License
 

@@ -1,9 +1,9 @@
 site_name: DANDI Documentation
-repo_name: "dandi/handbook"
-repo_url: "https://github.com/dandi/handbook"
+repo_name: "dandi/dandi-docs"
+repo_url: "https://github.com/dandi/dandi-docs"
 copyright: "CC-BY 4.0"
 use_directory_urls: true
-site_url: https://www.dandiarchive.org/handbook/
+site_url: https://docs.dandiarchive.org
 
 # Material theme
 theme:
@@ -12,43 +12,96 @@ theme:
   favicon: img/favicon.ico
   logo: img/dandi-logo-square_sw.png
   palette:
-    primary: "dark blue"
-    accent: "light blue"
+    - scheme: default
+      toggle: 
+        icon: material/weather-night
+        name: Dark mode
+      primary: "dark blue"
+      accent: "light blue"
+    - scheme: slate
+      toggle: 
+        icon: material/weather-sunny
+        name: Light mode
+      primary: "dark blue"
+      accent: "light blue"
   features:
     - toc.integrate
 
 # Pages
 nav:
   - Welcome: "index.md"
-  - Introduction: "01_introduction.md"
-  - Data Standards: "30_data_standards.md"
-  - Data Licenses: "35_data_licenses.md"
-  - User Guide: 
-    - "10_user_guide.md"
-    - Create DANDI Account: "16_account.md"
-    - View Dandisets: "11_view.md"
-    - Download Dandisets: "12_download.md"
-    - Create Dandisets: "13_upload.md"
-    - Validate NWB Files: "135_validate.md"
-    - Publish Dandisets: "14_publish.md"
-    - Debug: "15_debug.md"
-    - DANDI CLI and Python API: https://dandi.readthedocs.io
+  - Introduction: "introduction.md"
+  - Getting Started:
+    - Creating a DANDI Account: "getting-started/creating-account.md"
+    - DANDI Ecosystem: "getting-started/dandi-ecosystem.md"
+    - Data Standards:
+      - Overview: "getting-started/data-standards/index.md"
+      - NWB: "getting-started/data-standards/nwb.md"
+  - "User Guide: Sharing Data":
+    - Creating a Dandiset: "user-guide-sharing/creating-dandiset.md"
+    - Data Licenses: "user-guide-sharing/data-licenses.md"
+    - Converting Data:
+      - Overview: "user-guide-sharing/converting-data/index.md"
+      - NWB: "user-guide-sharing/converting-data/nwb/index.md"
+      - NWB GUIDE: "user-guide-sharing/converting-data/nwb/nwb-guide.md"
+      - NeuroConv: "user-guide-sharing/converting-data/nwb/neuroconv.md"
+      - PyNWB and MatNWB: "user-guide-sharing/converting-data/nwb/pynwb-matnwb.md"
+    - Validating NWB Files: "user-guide-sharing/validating-files.md"
+    - Uploading Data: "user-guide-sharing/uploading-data.md"
+    - Dandiset Metadata: "user-guide-sharing/dandiset-metadata.md"
+    - Publishing Dandisets: "user-guide-sharing/publishing-dandisets.md"
+    - Contributing an example notebook: "user-guide-sharing/contributing-notebook.md"
+  - "User Guide: Using Data":
+    - Exploring Dandisets: "user-guide-using/exploring-dandisets.md"
+    - Accessing Data:
+      - Overview: "user-guide-using/accessing-data/index.md"
+      - Downloading: "user-guide-using/accessing-data/downloading.md"
+      - Streaming: "user-guide-using/accessing-data/streaming.md"
+      - External Services: "user-guide-using/accessing-data/external-services.md"
+    - Citing Dandisets: "user-guide-using/citing-dandisets.md"
+    - DANDI Hub: "user-guide-using/dandi-hub.md"
+  - Tutorials:
+    - Dandiset Examples: https://dandi.github.io/example-notebooks
+    - DANDI User Guide, Part I: "example-notebooks/dandi/DANDI User Guide, Part I.ipynb"
+    - DANDI User Guide, Part II: "example-notebooks/dandi/DANDI User Guide, Part II.ipynb"
+    - Simple Dandiset Search: "example-notebooks/tutorials/neurodatarehack_2024/simple_dandiset_search.ipynb"
+    - Advanced Asset Search: "example-notebooks/tutorials/cosyne_2023/advanced_asset_search.ipynb"
+    - Streaming and interacting with NWB data: "example-notebooks/tutorials/bcm_2024/analysis-demo.ipynb"
+    - NWB Widget Demo: "example-notebooks/demos/NWBWidget-demo.ipynb"
   - Developer Guide:
-    - "20_developer_guide.md"
-    - Notes: "40_development.md"
-    - REST API Swagger: https://api.dandiarchive.org/swagger
-    - REST API Redoc: https://api.dandiarchive.org/redoc
-  - DANDI Hub: "50_hub.md"
+    - System Architecture: "developer-guide/system-architecture.md"
+    - Developer Notes: "developer-guide/developer-notes.md"
+    - Integrate External Services with DANDI: "developer-guide/integrate-external-services.md"
+    - Contributing Documentation: "developer-guide/contributing-documentation.md"
+    - Creating a DANDI Instance:
+      - Overview: "developer-guide/creating-dandi-instance/index.md"
+      - Initialize Vendor Accounts: "developer-guide/creating-dandi-instance/initialize-vendors.md"
+      - DANDI Authentication: "developer-guide/creating-dandi-instance/dandi-authentication.md"
+      - DANDI Client: "developer-guide/creating-dandi-instance/dandi-cli.md"
+      - DANDI Infrastructure: "developer-guide/creating-dandi-instance/dandi-infrastructure.md"
+      - DANDI Archive: "developer-guide/creating-dandi-instance/dandi-archive.md"
+      - DANDI Hub: "developer-guide/creating-dandi-instance/dandi-hub.md"
+  - Health Status:
+    - Dandisets: https://github.com/dandi/dandisets-healthstatus
+    - Services: https://status.dandiarchive.org
   - Terms and Policies:
-      - Terms: "about/terms.md"
-      - Policies: "about/policies.md"
-  - About This Doc: "100_about_this_doc.md"
+    - Terms: "terms-policies/terms.md"
+    - Policies: "terms-policies/policies.md"
+  - API:
+    - DANDI Client: "api/dandi-client.md"
+    - REST API: "api/rest-api.md"
 
 # List of extensions
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.critic
+  - pymdownx.magiclink
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - toc:
       permalink: True
 
@@ -56,24 +109,29 @@ markdown_extensions:
 plugins:
   - search
   - open-in-new-tab
-  - section-index
+  - mkdocs-jupyter:
+      ignore_h1_titles: True
+      include: ["*.ipynb"]
 
 # Customize theme
 extra:
   homepage: https://dandiarchive.org
-  generator: false # Disable watermark
+  analytics:
+    provider: google
+    property: G-15WQLCLQ3L
   social:
     - icon: fontawesome/brands/slack
       link: https://dandiarchive.slack.com
       name: Slack
     - icon: fontawesome/solid/paper-plane
       link: mailto:info@dandiarchive.org
-    - icon: fontawesome/brands/x-twitter
-      link: https://twitter.com/dandiarchive
-      name: X-Twitter
+      name: Email
     - icon: fontawesome/brands/github
       link: https://github.com/dandi
       name: GitHub
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@dandiarchive
       name: YouTube
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/dandiarchive.org
+      name: Bluesky
