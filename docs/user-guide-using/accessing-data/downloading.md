@@ -48,13 +48,13 @@ Names of the subjects can be found on DANDI web application or by running a comm
 DANDI:000023`.
 Once you have the subject ID, you can download the data, e.g.:
 
-    dandi download https://api.dandiarchive.org/api/dandisets/000023/versions/draft/assets/?path=sub-811677083
+    dandi download "https://api.dandiarchive.org/api/dandisets/000023/versions/draft/assets/?path=sub-811677083"
 
 You could replace `draft` with a specific non-draft version you are interested in (e.g. `0.210914.1900` in the case of this Dandiset), if you are not interested in the latest, possibly different state of the Dandiset.
 
 You can also use the link from DANDI web application, e.g.:
 
-    dandi download https://dandiarchive.org/dandiset/000023/0.210914.1900/files?location=sub-541516760%2F
+    dandi download "https://dandiarchive.org/dandiset/000023/0.210914.1900/files?location=sub-541516760"
 
 
 ### Download a specific file from a Dandiset
@@ -81,12 +81,21 @@ For example:
 ## Using DataLad
 
 All dandisets are regularly mirrored to DataLad datasets which are made available at the GitHub organization https://github.com/dandisets.
+
+<img
+src="../../../img/web_github_dandisets.png"
+alt="web_dandiset_files"
+style="width: 60%; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
+
+Each Dandiset is represented as a separate DataLad dataset.
+<https://github.com/dandi/dandisets/> is a [DataLad superdataset](https://handbook.datalad.org/en/latest/glossary.html#term-DataLad-superdataset) that includes all individual Dandiset datasets as subdatasets ([git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)).
 Where present, individual [Zarr](https://zarr.dev/) files are included as subdatasets ([git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)) hosted in the GitHub organization <https://github.com/dandizarrs/>.
 
 The Git revision histories of each dataset reflect the Dandiset's draft state as of each execution of the mirroring job.
 Published Dandiset versions are tagged with Git tags.
 
 With DataLad, you can:
+
 - clone an entire dataset,
 - use a specific version of it,
 - explore history of modifications,

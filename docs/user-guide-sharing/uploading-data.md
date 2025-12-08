@@ -54,7 +54,7 @@ For command-line users or those with larger datasets, the DANDI CLI provides a p
    ```
    To upload to the development server, use:
    ```bash
-   dandi upload -i dandi-staging
+   dandi upload -i dandi-sandbox
    ```
 
 ## Storing Access Credentials
@@ -70,6 +70,13 @@ There are two options for storing your DANDI access credentials:
   ```
 
 - Note that there are no spaces around the "=".
+
+- If your `DANDI_API_KEY` needs to be reset (for example, because it was publicly exposed), you can cycle your API key by following the instructions below:
+
+   1. Log in to DANDI Archive
+   2. Click on your user initials in the top-right corner
+   3. Click the circular arrow
+   ![dandi_api_key_reset](../img/dandi_api_key_reset.png)
 
 ### 2. `keyring` Library
 
