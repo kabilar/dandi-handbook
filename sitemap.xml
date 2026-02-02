@@ -2,107 +2,198 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.dandiarchive.org/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/01_introduction/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/introduction/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/100_contribute_docs/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/support/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/10_using_dandi/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/api/dandi-client/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/11_view/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/api/rest-api/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/12_download/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/developer-guide/contributing-documentation/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/12_download_1/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/developer-guide/developer-notes/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/135_validation/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/developer-guide/integrate-external-services/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/136_metadata/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/developer-guide/system-architecture/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/13_upload/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/developer-guide/creating-dandi-instance/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/14_publish/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/developer-guide/creating-dandi-instance/dandi-archive/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/15_debugging/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/developer-guide/creating-dandi-instance/dandi-authentication/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/16_account/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/developer-guide/creating-dandi-instance/dandi-cli/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/20_project_structure/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/developer-guide/creating-dandi-instance/dandi-hub/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/30_data_standards/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/developer-guide/creating-dandi-instance/dandi-infrastructure/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/35_data_licenses/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/developer-guide/creating-dandi-instance/initialize-vendors/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/40_development/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/getting-started/creating-account/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/50_hub/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/getting-started/dandi-ecosystem/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/citing/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/getting-started/data-standards/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/about/policies/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/getting-started/data-standards/nwb/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
-         <loc>https://docs.dandiarchive.org/about/terms/</loc>
-         <lastmod>2025-01-11</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://docs.dandiarchive.org/terms-policies/policies/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/terms-policies/terms/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/tutorials/DANDI%20User%20Guide%2C%20Part%20I/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/tutorials/DANDI%20User%20Guide%2C%20Part%20II/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/tutorials/NWBWidget-demo/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/tutorials/NWB_tutorial_2019/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/tutorials/advanced_asset_search/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/tutorials/analysis-demo/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/tutorials/simple_dandiset_search/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-sharing/contributing-notebook/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-sharing/creating-dandiset/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-sharing/dandiset-metadata/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-sharing/data-licenses/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-sharing/publishing-dandisets/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-sharing/uploading-data/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-sharing/validating-files/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-sharing/converting-data/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-sharing/converting-data/nwb/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-sharing/converting-data/nwb/neuroconv/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-sharing/converting-data/nwb/nwb-guide/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-sharing/converting-data/nwb/pynwb-matnwb/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-using/citing-dandisets/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-using/dandi-hub/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-using/exploring-dandisets/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-using/accessing-data/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-using/accessing-data/12_download_1/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-using/accessing-data/downloading/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-using/accessing-data/external-services/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.dandiarchive.org/user-guide-using/accessing-data/streaming/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
 </urlset>
