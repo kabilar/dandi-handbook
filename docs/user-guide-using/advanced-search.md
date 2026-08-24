@@ -12,7 +12,7 @@ neuropixels species:mouse created_after:2022-01-01 approach:electrophysiological
 
 That query mixes free text with every kind of operator: date bounds, the three
 asset-summary operators, and `owner`. At the time of writing it returns two Dandisets,
-000253 and 000563.
+000253 and 000563. [Run it in the Archive](https://dandiarchive.org/dandiset/search?search=neuropixels+species:mouse+created_after:2022-01-01+approach:electrophysiological+published_after:2022-01-01+modified_after:2022-01-01+modified_before:2026-01-01+technique:%22multi+electrode+extracellular+electrophysiology+recording%22+owner:%22Jerome+Lecoq%22).
 
 Operators combine with AND. Quoted phrases (`"like this"`) are treated as a single value.
 Anything you type without a `key:` prefix is full-text matched against the Dandiset
