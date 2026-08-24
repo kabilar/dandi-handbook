@@ -150,6 +150,3 @@ Operators always combine with AND. There is no OR or NOT, and no grammar for nes
 
 The existing `?user=me` query parameter still works for "my Dandisets". There is no
 `owner:me` alias in the operator syntax.
-
-Free text and operators share the same `?search=` parameter, so you do not need a different
-endpoint depending on whether your query has operators.
