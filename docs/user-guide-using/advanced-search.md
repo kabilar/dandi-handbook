@@ -123,18 +123,30 @@ The same syntax works against the REST API. The search string goes in the `?sear
 parameter on `/api/dandisets/`:
 
 ```bash
-curl 'https://api.dandiarchive.org/api/dandisets/?search=species:mouse+technique:%22spike+sorting%22'
+curl --get 'https://api.dandiarchive.org/api/dandisets/' \
+  --data-urlencode 'search=neuropixels species:mouse created_after:2022-01-01 approach:electrophysiological published_after:2022-01-01 modified_after:2022-01-01 modified_before:2026-01-01 technique:"multi electrode extracellular electrophysiology recording" owner:"Jerome Lecoq"'
 ```
 
 ```python
 import requests
 
+query = (
+    'neuropixels species:mouse created_after:2022-01-01 '
+    'approach:electrophysiological published_after:2022-01-01 '
+    'modified_after:2022-01-01 modified_before:2026-01-01 '
+    'technique:"multi electrode extracellular electrophysiology recording" '
+    'owner:"Jerome Lecoq"'
+)
 r = requests.get(
     'https://api.dandiarchive.org/api/dandisets/',
-    params={'search': 'species:mouse approach:electrophysiological', 'draft': 'true', 'empty': 'true'},
+    params={'search': query, 'draft': 'true', 'empty': 'true'},
 )
 r.json()
 ```
+
+That query combines free text with every kind of operator: date bounds, the three
+asset-summary operators, and `owner`. At the time of writing it returns two Dandisets,
+000253 and 000563.
 
 The OpenAPI description at [https://api.dandiarchive.org/swagger/](https://api.dandiarchive.org/swagger/)
 lists every operator inline.
