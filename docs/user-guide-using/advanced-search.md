@@ -99,45 +99,6 @@ owner:"Jane Doe"                       # full display name
 If a name matches multiple users, for example two people named Smith, Dandisets owned by
 any of them are returned.
 
-## Recipes
-
-Find recent Dandisets from a particular technique:
-
-```
-technique:"patch clamp" published_after:2024-01-01
-```
-
-Find Dandisets with mouse electrophysiology data:
-
-```
-species:mouse approach:electrophysiological
-```
-
-Find Dandisets updated during 2025:
-
-```
-modified_after:2025-01-01 modified_before:2026-01-01
-```
-
-Find your own Dandisets in the listing:
-
-```
-owner:"Your Name"
-```
-
-You can also use the **My Dandisets** tab if you are signed in, which returns the same set.
-
-## Quoting Rules
-
-Wrap a multi-word value in double quotes: `technique:"spike sorting"`,
-`owner:"Jane Doe"`.
-
-Wrap a whole token in double quotes to opt out of operator parsing. This is useful when
-the text you are searching for contains a colon: `"foo:bar"` searches for the literal text
-`foo:bar`.
-
-Unbalanced quotes return a 400 with an explanatory error message.
-
 ## Error Messages
 
 Invalid syntax does not fail silently. The common cases are:
