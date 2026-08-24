@@ -86,9 +86,9 @@ do not combine into a spurious match.
 
 ### Owner
 
-| Operator | What it matches |
-|---|---|
-| `owner:VALUE` | Dandisets owned by users matching `VALUE` (case-insensitive) against GitHub username, email, first name, last name, or `"first name last name"` |
+`owner:VALUE` restricts the results to Dandisets owned by a matching user. `VALUE` is
+matched case-insensitively against the owner's GitHub username, email address, first name,
+last name, or full name in `"first last"` form.
 
 ```
 owner:alice
