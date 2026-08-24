@@ -4,14 +4,15 @@ The Dandiset list's search box accepts a Gmail-style syntax that lets you mix fr
 terms with structured `key:value` operators, so you can filter by creation date, species,
 approach, measurement technique, and owner from the same input.
 
-## Quick Examples
+## Example
 
 ```
-neuropixels species:mouse created_after:2024-01-01
-approach:electrophysiological published_after:2024-01-01
-technique:"patch clamp" owner:"Jane Doe"
-modified_after:2025-01-01 modified_before:2026-01-01
+neuropixels species:mouse created_after:2022-01-01 approach:electrophysiological published_after:2022-01-01 modified_after:2022-01-01 modified_before:2026-01-01 technique:"multi electrode extracellular electrophysiology recording" owner:"Jerome Lecoq"
 ```
+
+That query mixes free text with every kind of operator: date bounds, the three
+asset-summary operators, and `owner`. At the time of writing it returns two Dandisets,
+000253 and 000563.
 
 Operators combine with AND. Quoted phrases (`"like this"`) are treated as a single value.
 Anything you type without a `key:` prefix is full-text matched against the Dandiset
@@ -143,10 +144,6 @@ r = requests.get(
 )
 r.json()
 ```
-
-That query combines free text with every kind of operator: date bounds, the three
-asset-summary operators, and `owner`. At the time of writing it returns two Dandisets,
-000253 and 000563.
 
 The OpenAPI description at [https://api.dandiarchive.org/swagger/](https://api.dandiarchive.org/swagger/)
 lists every operator inline.
