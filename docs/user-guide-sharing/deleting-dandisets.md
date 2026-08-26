@@ -30,7 +30,7 @@ Deleting a Dandiset removes its draft version, all of its files, and its metadat
 Dandiset identifier is retired and is not reassigned.
 
 There is no button in the web application for deleting an entire Dandiset. Use the DANDI
-Client or the REST API.
+Client as described below.
 
 ### Using the DANDI Client
 
