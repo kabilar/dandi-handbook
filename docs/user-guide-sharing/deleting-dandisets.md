@@ -45,7 +45,3 @@ See the [`dandi delete`
 documentation](https://dandi.readthedocs.io/en/latest/cmdline/delete.html) for the full
 list of options.
 
-### Using the REST API
-
-In a web browser, navigate to the Dandiset endpoint at
-`https://api.dandiarchive.org/api/dandisets/<dandiset_id>/` and select `DELETE`.
